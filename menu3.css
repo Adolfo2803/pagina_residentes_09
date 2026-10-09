@@ -1,6 +1,6 @@
 .menu3 {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px; /* lo hice un poco más redondito de las esquinas */
     overflow: hidden;
 }
 
@@ -14,12 +14,12 @@
 
 .acordeon-header {
     width: 100%;
-    padding: 15px;
-    background: #8e44ad;
+    padding: 20px; /* le di un poco más de espacio por dentro */
+    background: #007bff; /* cambié el color morado por un azul bonito */
     color: #fff;
     border: none;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px; /* hice la letra un poquito más grande */
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -28,11 +28,11 @@
 }
 
 .acordeon-header:hover {
-    background: #9b59b6;
+    background: #0056b3; /* este es el color cuando pasas el ratón por encima (un azul más oscuro) */
 }
 
 .acordeon-header span {
-    font-size: 20px;
+    font-size: 24px; /* hice el ícono (la flechita o cruz) un poco más grande también */
     transition: transform 0.3s;
 }
 
@@ -44,16 +44,16 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    background: #f9f9f9;
+    background: #f4f6f8; /* un gris súper clarito para que quede bien con el azul */
 }
 
 .acordeon-item.activo .acordeon-content {
-    max-height: 300px;
+    max-height: 500px; /* le di más tope de espacio por si luego le pones mucho texto adentro */
 }
 
 .acordeon-content a {
     display: block;
-    padding: 12px 25px;
+    padding: 15px 30px; /* le di un poquito más de espacio a los botones o enlaces de adentro */
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid #eee;
@@ -61,5 +61,5 @@
 }
 
 .acordeon-content a:hover {
-    background: #ecf0f1;
+    background: #e2e6ea; /* el color de fondo que sale cuando pasas el ratón por las opciones de adentro */
 }

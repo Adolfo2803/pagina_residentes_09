@@ -89,35 +89,39 @@
         </section>
 
         <!-- MENÚ 3: Acordeón -->
-        <section class="seccion">
-            <h2>Menú 3: Acordeón</h2>
-            <div class="menu3">
-                <div class="acordeon-item">
-                    <button class="acordeon-header">Sección 1 <span>+</span></button>
-                    <div class="acordeon-content">
-                        <a href="#" data-item="seccion1-a">Opción A</a>
-                        <a href="#" data-item="seccion1-b">Opción B</a>
-                        <a href="#" data-item="seccion1-c">Opción C</a>
-                    </div>
-                </div>
-                <div class="acordeon-item">
-                    <button class="acordeon-header">Sección 2 <span>+</span></button>
-                    <div class="acordeon-content">
-                        <a href="#" data-item="seccion2-a">Opción D</a>
-                        <a href="#" data-item="seccion2-b">Opción E</a>
-                    </div>
-                </div>
-                <div class="acordeon-item">
-                    <button class="acordeon-header">Sección 3 <span>+</span></button>
-                    <div class="acordeon-content">
-                        <a href="#" data-item="seccion3-a">Opción F</a>
-                        <a href="#" data-item="seccion3-b">Opción G</a>
-                    </div>
-                </div>
+<section class="seccion">
+    <h2>Menú 3: Acordeón</h2>
+    <div class="menu3">
+        <div class="acordeon-item">
+            <button class="acordeon-header">Sección 1 <span>+</span></button>
+            <div class="acordeon-content">
+                <a href="#" data-item="seccion1-a">Opción A</a>
+                <a href="#" data-item="seccion1-b">Opción B</a>
+                <a href="#" data-item="seccion1-c">Opción C</a>
             </div>
-            <p id="resultado3" style="margin-top: 15px; color: #555;"></p>
-        </section>
-
+        </div>
+        <div class="acordeon-item">
+            <button class="acordeon-header">Sección 2 <span>+</span></button>
+            <div class="acordeon-content">
+                <a href="#" data-item="seccion2-a">Opción D</a>
+                <a href="#" data-item="seccion2-b">Opción E</a>
+            </div>
+        </div>
+        
+        <!--  Cambio las opciones por un pequeño formulario -->
+        <div class="acordeon-item">
+            <button class="acordeon-header">Formulario <span>+</span></button>
+            <div class="acordeon-content" style="padding: 15px;"> <!-- espacio para que no se vea apretado -->
+                <form id="miFormulario">
+                    <label for="nombre">Dime tu nombre:</label><br>
+                    <input type="text" id="nombre" placeholder="Escribe aquí..." style="margin-top: 5px; margin-bottom: 10px; padding: 8px; width: 90%; border-radius: 4px; border: 1px solid #ccc;">
+                    <button type="submit" style="padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p id="resultado3" style="margin-top: 15px; color: #555;"></p>
+</section>
     </div>
 
     <!-- JS de cada menú -->
