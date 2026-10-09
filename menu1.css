@@ -1,7 +1,7 @@
 .menu1 ul {
     list-style: none;
     display: flex;
-    background: #2c3e50;
+    background: #21b114;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -13,7 +13,7 @@
 .menu1 ul li a {
     display: block;
     padding: 15px;
-    color: #fff;
+    color: #965382;
     text-decoration: none;
     text-align: center;
     transition: background 0.3s, color 0.3s;
@@ -24,6 +24,6 @@
 }
 
 .menu1 ul li a.activo {
-    background: #e74c3c;
+    background: #933a30;
     font-weight: bold;
 }
