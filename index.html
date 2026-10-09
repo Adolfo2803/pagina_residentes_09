@@ -85,8 +85,18 @@
                     <li><a href="#" data-item="cerrar">Cerrar Sesión</a></li>
                 </ul>
             </aside>
-            <p id="resultado2" style="margin-top: 15px; color: #555;"></p>
+            <p id="resultado2" style="margin-top: 15px; color: #754f4f;"></p>
         </section>
+
+        <p id="resultado2" style="margin-top: 15px; color: #555;"></p>
+        <!-- Botón para limpiar los resultados -->
+        <button onclick="limpiarResultados()">
+            Limpiar resultados 
+        </button>
+        </section
+
+    </div>
+
 
         <!-- MENÚ 3: Acordeón -->
         <section class="seccion">
@@ -124,5 +134,12 @@
     <script src="menu1.js"></script>
     <script src="menu2.js"></script>
     <script src="menu3.js"></script>
+
+    <script>
+    function limpiarResultado2() {
+        document.getElementById("resultado2").textContent = "";
+    }
+</script>
+
 </body>
 </html>
