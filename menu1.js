@@ -13,8 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Agregar activo al seleccionado
             enlace.classList.add('activo');
 
-            // Mostrar resultado
-            resultado.textContent = `Has seleccionado: ${enlace.dataset.item}`;
+            // Mostrar resultado con mensajes personalizados
+            const mensajes = {
+                inicio: "¡Bienvenido a nuestra página!",
+                servicios: "Conoce todos los servicios que ofrecemos.",
+                productos: "Explora nuestros productos disponibles.",
+                contacto: "¡Gracias por visitarnos! Estamos para ayudarte."
+            };
+
+            resultado.textContent = mensajes[enlace.dataset.item];
         });
     });
 });
