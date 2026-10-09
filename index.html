@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Menús con JS y CSS</title>
+    
+    <!-- CSS de cada menú -->
+    <link rel="stylesheet" href="menu1.css">
+    <link rel="stylesheet" href="menu2.css">
+    <link rel="stylesheet" href="menu3.css">
+    
+    <!-- Estilos generales de la página -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .contenedor {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .seccion {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .seccion h2 {
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo de Tres Menús</h1>
+
+    <div class="contenedor">
+
+        <!-- MENÚ 1: Horizontal -->
+        <section class="seccion">
+            <h2>Menú 1: Horizontal</h2>
+            <nav class="menu1">
+                <ul>
+                    <li><a href="#" data-item="inicio">Inicio</a></li>
+                    <li><a href="#" data-item="servicios">Servicios</a></li>
+                    <li><a href="#" data-item="productos">Productos</a></li>
+                    <li><a href="#" data-item="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <p id="resultado1" style="margin-top: 15px; color: #555;"></p>
+        </section>
+
+        <!-- MENÚ 2: Lateral desplegable -->
+        <section class="seccion">
+            <h2>Menú 2: Lateral Desplegable</h2>
+            <button class="btn-toggle" id="toggleMenu2">☰ Abrir Menú</button>
+            <aside class="menu2" id="menu2">
+                <ul>
+                    <li><a href="#" data-item="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-item="perfil">Perfil</a></li>
+                    <li><a href="#" data-item="configuracion">Configuración</a></li>
+                    <li><a href="#" data-item="cerrar">Cerrar Sesión</a></li>
+                </ul>
+            </aside>
+            <p id="resultado2" style="margin-top: 15px; color: #555;"></p>
+        </section>
+
+        <!-- MENÚ 3: Acordeón -->
+        <section class="seccion">
+            <h2>Menú 3: Acordeón</h2>
+            <div class="menu3">
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 1 <span>+</span></button>
+                    <div class="acordeon-content">
+                        <a href="#" data-item="seccion1-a">Opción A</a>
+                        <a href="#" data-item="seccion1-b">Opción B</a>
+                        <a href="#" data-item="seccion1-c">Opción C</a>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 2 <span>+</span></button>
+                    <div class="acordeon-content">
+                        <a href="#" data-item="seccion2-a">Opción D</a>
+                        <a href="#" data-item="seccion2-b">Opción E</a>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 3 <span>+</span></button>
+                    <div class="acordeon-content">
+                        <a href="#" data-item="seccion3-a">Opción F</a>
+                        <a href="#" data-item="seccion3-b">Opción G</a>
+                    </div>
+                </div>
+            </div>
+            <p id="resultado3" style="margin-top: 15px; color: #555;"></p>
+        </section>
+
+    </div>
+
+    <!-- JS de cada menú -->
+    <script src="menu1.js"></script>
+    <script src="menu2.js"></script>
+    <script src="menu3.js"></script>
+</body>
+</html>

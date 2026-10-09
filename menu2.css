@@ -1,0 +1,45 @@
+.btn-toggle {
+    padding: 10px 20px;
+    background: #16a085;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-toggle:hover {
+    background: #1abc9c;
+}
+
+.menu2 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #34495e;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.menu2.abierto {
+    max-height: 300px;
+}
+
+.menu2 ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu2 ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+.menu2 ul li a:hover {
+    background: #2c3e50;
+    padding-left: 30px;
+}

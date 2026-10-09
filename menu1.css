@@ -1,0 +1,29 @@
+.menu1 ul {
+    list-style: none;
+    display: flex;
+    background: #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu1 ul li {
+    flex: 1;
+}
+
+.menu1 ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu1 ul li a:hover {
+    background: #3498db;
+}
+
+.menu1 ul li a.activo {
+    background: #e74c3c;
+    font-weight: bold;
+}
